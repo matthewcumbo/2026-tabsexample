@@ -1,33 +1,59 @@
 import { Component } from '@angular/core';
+import {CommonModule} from '@angular/common';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonListHeader} from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss'],
-  imports: [IonListHeader, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel],
+  imports: [CommonModule, IonListHeader, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel],
 })
 export class Tab1Page {
   constructor() {}
 
-  header = "Countries";
+  header = "Capital Cities";
+  header2 = "Cities";
 
   countries = [
     {
       country: "Malta",
-      capital: "Valletta"
+      city: "Valletta",
+      capital: true
     },
     {
       country: "England",
-      capital: "London"
+      city: "London",
+      capital: true
     },
     {
       country: "Italy",
-      capital: "Rome"
+      city: "Rome",
+      capital: true
     },
     {
       country: "France",
-      capital: "Paris"
+      city: "Paris",
+      capital: true
+    },
+    {
+      country: "Malta",
+      city: "Mosta",
+      capital: false
+    },
+    {
+      country: "England",
+      city: "Newcastle",
+      capital: false
+    },
+    {
+      country: "Italy",
+      city: "Milan",
+      capital: false
+    },
+    {
+      country: "France",
+      city: "Marseille",
+      capital: false
     }
   ];
 }
