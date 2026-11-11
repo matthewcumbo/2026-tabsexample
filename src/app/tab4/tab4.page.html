@@ -15,5 +15,9 @@
     <ion-card-title>{{student.name}} {{student.surname}}</ion-card-title>
     <ion-card-subtitle>{{student.age}}</ion-card-subtitle>
   </ion-card>
-  
+
+  <ion-button (click)="choose(0);">1</ion-button>
+  <ion-button (click)="choose(1);">2</ion-button>
+  <ion-text>{{choice}}</ion-text>
+
 </ion-content>

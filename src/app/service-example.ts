@@ -8,4 +8,10 @@ export class ServiceExample {
         surname:"Borg",
         age:99
     };
+
+    public list = ['asdf','qwerty'];
+
+    select(selection:number){
+        return this.list[selection];
+    }
 }
